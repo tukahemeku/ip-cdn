@@ -28,7 +28,6 @@ subfinder -d buyyoutubviews.com​ -silent -nc -o >> subs.txt
 
 
 
-
 viewdns.info
 
 <b>save extracted ips to ips.txt</b>
