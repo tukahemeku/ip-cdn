@@ -32,15 +32,14 @@ https://viewdns.info/iphistory/?domain=buyyoutubviews.com ---> ips.txt
 
 
 dnsx
-
-‍‍```
+```
 cat subs.txt | dnsx --resp-only​ >> ips.txt
 #removing dups
 
 cat ips.txt | sort -u > temp
 cat temp >  ips.txt
 rm temp
-‍‍```
+```
 
 nmap
 example usaage for one ip
@@ -50,7 +49,6 @@ nmap -sS -Pn 188.114.99.228 -p 443 --script ssl-cert -T4
 ‍‍```
 
 loop to check all ips
-
 ‍‍```
 for ip in $(cat ips.txt);do​
 
