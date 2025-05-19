@@ -23,9 +23,7 @@ subfinder -d buyyoutubviews.com​ -silent -nc -o >> subs.txt
 
 viewdns.info
 
-‍‍```
-https://viewdns.info/iphistory/?domain=buyyoutubviews.com ---> ips.txt
-‍‍```
+<a>https://viewdns.info/iphistory/?domain=buyyoutubviews.com</a>
 
 
 dnsx
