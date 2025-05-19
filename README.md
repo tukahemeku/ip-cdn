@@ -8,7 +8,7 @@ https://securitytrails.com/list/apex_domain/buyyoutubviews.com   ---> subs.txt
 assetfinder
 ‍‍‍```
 assetfinder buyyoutubviews.com | grep -s "buyyoutubviews.com" | sed '/*/d' | tr -d ' ' | sort -u >>  subs.txt
-```
+``
 
 findomain
 ```
@@ -53,3 +53,4 @@ for ip in $(cat ips.txt);do​
 done​
 
 cat output | grep buyyoutubviews.com​
+```
