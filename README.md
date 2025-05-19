@@ -45,7 +45,9 @@ nmap -sS -Pn 188.114.99.228 -p 443 --script ssl-cert -T4
 
 loop to check all ips
 ```
-for ip in $(cat ips.txt);do​
-    echo $ip | sed 's|^|https://|' | sed 's/$/ -->/' | tr -d "\n" >> output​
-    nmap -sS -Pn $ip -p 443 --script ssl-cert -T4 | grep "Subject Alternative Name:" | tr " " "\n" | sed 's/DNS://g' | grep "\." | tr -d "\n" | sed -e '$a\' | tr "," " " >> output​done​; cat output | grep buyyoutubviews.com​
+for ip in $(cat ips.txt);do
+    echo $ip | sed 's|^|https://|' | sed 's/$/ -->/' | tr -d "\n" >> output
+    nmap -sS -Pn $ip -p 443 --script ssl-cert -T4 | grep "Subject Alternative Name:" | tr " " "\n" | sed 's/DNS://g' | grep "\." | tr -d "\n" | sed -e '$a\' | tr "," " " >> output
+done
+cat output | grep buyyoutubviews.com
 ```
