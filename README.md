@@ -49,5 +49,5 @@ for ip in $(cat ips.txt| sort -u  | sed 's/http[s]*:\/\///g' | cut-cdn -q | http
     echo $ip | sed 's|^|https://|' | sed 's/$/ -->/' | tr -d "\n" >> output
     nmap -sS -Pn $ip -p 443 --script ssl-cert -T4 | grep "Subject Alternative Name:" | tr " " "\n" | sed 's/DNS://g' | grep "\." | tr -d "\n" | sed -e '$a\' | tr "," " " >> output
 done
-cat output | grep buyyoutubviews.com
+cat output | grep buyyoutubviews.com | tail -n 1
 ```
