@@ -1,10 +1,6 @@
 Securitytrails.com​
 
-#ابتدا  لاگین کنید
-
-<a>
-https://securitytrails.com/list/apex_domain/buyyoutubviews.com
-</a>
+<a>https://securitytrails.com/list/apex_domain/buyyoutubviews.com</a>
 
 assetfinder
 
