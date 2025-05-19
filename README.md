@@ -53,4 +53,3 @@ for ip in $(cat ips.txt);do​
 done​
 
 cat output | grep buyyoutubviews.com​
-```
